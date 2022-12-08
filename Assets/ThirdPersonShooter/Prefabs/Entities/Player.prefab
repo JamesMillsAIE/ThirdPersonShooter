@@ -150,7 +150,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7382566634769113461, guid: 276ccf35c412b7042be46f9d4546512c, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9922a12f34d0a084aab32de985459723, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -328,6 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1049345997037995523}
+  - component: {fileID: 5411647291089372676}
   m_Layer: 3
   m_Name: Weapon
   m_TagString: Player
@@ -349,6 +350,21 @@ Transform:
   m_Father: {fileID: 1049345997092799212}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5411647291089372676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049345997037995644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1988547bc2744229a58c5eae505bf438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootAction: {fileID: 356182427298087772, guid: 6386ab195071aca43aa669482c043566, type: 3}
+  shootPoint: {fileID: 3014191201266342836}
+  bulletLine: {fileID: 7630088445545566764, guid: 7d8cd7d73901fb743a516d5811811720, type: 3}
 --- !u!1 &1049345997067331244
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +541,7 @@ MonoBehaviour:
     attackRate: 0.25
   pauseAction: {fileID: 7834772275526830264, guid: 6386ab195071aca43aa669482c043566, type: 3}
   input: {fileID: 1049345995758929300}
+  weapon: {fileID: 5411647291089372676}
   hurtSource: {fileID: 1049345996610734736}
   deathSource: {fileID: 1049345997329119855}
 --- !u!54 &7041565918491887962
@@ -598,7 +615,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7382566634769113461, guid: 276ccf35c412b7042be46f9d4546512c, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2548,7 +2565,7 @@ Animator:
   m_GameObject: {fileID: 3014191201265977308}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f1d84cc28597f5641a3d9cbc4df7e306, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 689e832c746e9e749b06b933e30c8dc4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
